@@ -1,0 +1,38 @@
+/* نفس ألوان التطبيق وصفحات السيرفر (SmartChef.API/Pages/Legal/_LegalLayout.cshtml). */
+:root {
+    --primary: #F27457;
+    --ground: #FDFDFD;
+    --surface: #FFFFFF;
+    --soft: #FEF1EE;
+    --ink: #2D3436;
+    --ink-body: #5C5350;
+    --ink-secondary: #7D7370;
+    --border: #F0EAE7;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --ground: #17191A;
+        --surface: #222627;
+        --soft: #3B2E2B;
+        --ink: #F2ECEA;
+        --ink-body: #D6CDC9;
+        --ink-secondary: #BDB3AF;
+        --border: #33383A;
+    }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font-family: "Cairo", "Segoe UI", Tahoma, sans-serif; font-size: 16px; line-height: 1.8; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+header { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 8px; }
+.brand { font-weight: 800; font-size: 20px; color: var(--primary); }
+.lang { font-size: 14px; font-weight: 700; color: var(--ink-secondary); }
+h1 { font-size: 28px; line-height: 1.4; margin: 16px 0 4px; }
+h2 { font-size: 20px; margin: 32px 0 8px; }
+p, li { color: var(--ink-body); }
+ul { padding-inline-start: 22px; }
+.meta { color: var(--ink-secondary); font-size: 14px; margin: 0 0 24px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 4px 20px; margin: 16px 0; }
+.note { background: var(--soft); border-radius: 14px; padding: 12px 16px; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 56px 0 8px; }
+a { color: var(--primary); }
+footer { margin-top: 48px; color: var(--ink-secondary); font-size: 14px; }
